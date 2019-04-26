@@ -1,0 +1,26 @@
+{
+    "name": "xqwin/cmf",
+    "description": "cmf",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xqwin",
+            "email": "386431471@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "XQWIN\\CMF\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "minimum-stability": "master",
+    "require": {
+    },
+    "require-dev": {
+        "laravel/framework": "~5.5.0|~5.6.0|~5.7.0|~5.8.0"
+    }
+}
