@@ -1,9 +1,8 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: John
- * Date: 2019/4/26
- * Time: 10:36
+ * xqwin cmf.
+ * Author: xcwmoon <386431471@qq.com>
+ * Copyright (c) 2019 https://xcwmoon.com All rights reserved.
  */
 
 namespace XQWIN\CMF;
@@ -16,6 +15,7 @@ class CMFServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/../migrations');
         $this->loadTranslationsFrom(__DIR__.'/../resources/translations', 'xqwin');
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'xqwin');
+        $this->mergeConfigFrom(__DIR__.'/config.php','xqwin');
     }
     public function register(){
         $this->app->singleton('cmf',function(){

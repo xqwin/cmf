@@ -1,9 +1,8 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: John
- * Date: 2019/4/26
- * Time: 15:34
+ * xqwin cmf.
+ * Author: xcwmoon <386431471@qq.com>
+ * Copyright (c) 2019 https://xcwmoon.com All rights reserved.
  */
 
 namespace XQWIN\CMF;
