@@ -5,9 +5,10 @@
  * Copyright (c) 2019 https://xcwmoon.com All rights reserved.
  */
 
-namespace XQWIN\CMF\Rbac;
+namespace XQWIN\CMF\Rbac\Controllers;
+use Illuminate\Routing\Controller;
 
-class Role
+class CommonController extends Controller
 {
 
 }

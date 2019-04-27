@@ -7,7 +7,8 @@
 
 namespace XQWIN\CMF\Rbac\Controllers;
 
-class RoleController extends CommonController
+
+class AuthController extends CommonController
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +18,11 @@ class RoleController extends CommonController
     public function index()
     {
 
-        return view('xqwin::rbac.role.index');
+        return view('xqwin::auth.index');
+    }
+
+    public function login(){
+        
     }
 
     /**
