@@ -7,9 +7,14 @@
 
 namespace XQWIN\CMF\Rbac\Controllers;
 
-use XQWIN\CMF\Controllers\CommonController;
 
-class RoleController extends CommonController
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+use XQWIN\CMF\Controllers\CommonController;
+use XQWIN\CMF\Requests\PermissionPost;
+
+class PermissionController extends CommonController
 {
     /**
      * Display a listing of the resource.
@@ -19,7 +24,7 @@ class RoleController extends CommonController
     public function index()
     {
 
-        return view('xqwin::rbac.role.index');
+        return view('xqwin::rbac.permission.index');
     }
 
     /**
@@ -27,20 +32,27 @@ class RoleController extends CommonController
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        //dd(Route::getRoutes()->getRoutes());
+        
+        return view('xqwin::rbac.permission.create',[
+            
+        ]);
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \XQWIN\CMF\Requests\PermissionPost  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PermissionPost $request)
     {
-        //
+
+        return response()->json([
+            $request->all()
+        ]);
     }
 
     /**
@@ -62,7 +74,7 @@ class RoleController extends CommonController
      */
     public function edit($id)
     {
-        //
+        return view('xqwin::rbac.permission.edit');
     }
 
     /**
